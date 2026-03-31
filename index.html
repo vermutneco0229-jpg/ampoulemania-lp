@@ -593,18 +593,36 @@ section { padding: 60px 24px; }
 
 /* ===== Footer ===== */
 footer {
-  padding: 40px 24px;
+  padding: 48px 24px 36px;
   text-align: center;
-  background: var(--off-white);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(200,184,232,0.15) 0%, transparent 60%),
+    var(--off-white);
 }
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--text-dark);
+  letter-spacing: 0.15em;
+  margin-bottom: 6px;
+}
+.footer-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 12px;
   font-weight: 300;
   color: var(--text-light);
   letter-spacing: 0.15em;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
+}
+.footer-address {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--text-light);
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 .footer-copy {
   font-size: 10px;
@@ -1243,7 +1261,10 @@ footer {
 
 <!-- ===== Footer ===== -->
 <footer>
+  <div class="a-line" style="margin-bottom:32px;"></div>
   <p class="footer-brand">URURIA</p>
+  <p class="footer-sub">plasmania / Science Beauty</p>
+  <p class="footer-address">&lang;604-8051&rang;<br>京都府京都市中京区船屋町371<br>グランシャリオ 2F</p>
   <p class="footer-copy">All Rights Reserved.</p>
 </footer>
 
